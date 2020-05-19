@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
+    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +106,7 @@
       <workItem from="1589804894495" duration="3746000" />
       <workItem from="1589894823988" duration="957000" />
       <workItem from="1589888033283" duration="2189000" />
-      <workItem from="1589893483541" duration="2216000" />
+      <workItem from="1589893483541" duration="2717000" />
     </task>
     <task id="LOCAL-00001" summary="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
       <created>1589894092988</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589894092988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Delete another useless lines">
+      <created>1589896438141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589896438141</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
+    <MESSAGE value="Delete another useless lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete another useless lines" />
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1588525011426">
@@ -143,10 +153,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1588280723042" />
-    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2" timestamp="1589894261997">
+    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2" timestamp="1589896438079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589894261997" />
+    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589896438079" />
     <state width="499" height="466" key="DebuggerActiveHint" timestamp="1588534352148">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
