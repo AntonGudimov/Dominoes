@@ -1,7 +1,6 @@
 package logic;
 
 import logic.dominoes.Domino;
-import logic.dominoes.DominoChain;
 import logic.dominoes.ValueComparator;
 import logic.enums.DominoStatus;
 import logic.enums.GameState;
@@ -15,14 +14,14 @@ public final class Game {
     private static Game game;
     private LinkedList<Player> players;
     private Map<Player, LinkedList<Domino>> playerDominos;
-    private DominoChain dominoChain;
+    private LinkedList<Domino> dominoChain;
     private LinkedList<Domino> dominoStore;
     private GameState gameState;
 
     private Game(){
         players = new LinkedList<>();
         playerDominos = new HashMap<>();
-        dominoChain = DominoChain.getDominoChain();
+        dominoChain = new LinkedList<>();
         dominoStore = new LinkedList<>();
         gameState = GameState.NOT_PLAYING;
     }
@@ -34,7 +33,7 @@ public final class Game {
         return game;
     }
 
-    public DominoChain getDominoChain(){
+    public LinkedList<Domino> getDominoChain(){
         return dominoChain;
     }
 
@@ -107,7 +106,7 @@ public final class Game {
             throw new NullPointerException("player = null, expected Player value");
         else{
             if (isChainEmpty()){
-                dominoChain.putFirstDomino(domino);
+                putFirstDomino(domino);
             }
             else{
                 if (place == Place.NO_MATTER){
@@ -117,23 +116,23 @@ public final class Game {
                     else
                         place = Place.BOTTOM;
                 }
-                Side side = dominoChain.whichSideMatched(domino, place);
+                Side side = whichSideMatched(domino, place);
                 switch (side){
                     case HEAD:
                         if (place == Place.TOP){
                             domino.reverse();
-                            dominoChain.putToTheTop(domino);
+                            putToTheTop(domino);
                         }
                         else if (place == Place.BOTTOM)
-                            dominoChain.putToTheBottom(domino);
+                            putToTheBottom(domino);
                         break;
                     case TAIL:
                         if (place == Place.BOTTOM){
                             domino.reverse();
-                            dominoChain.putToTheBottom(domino);
+                            putToTheBottom(domino);
                         }
                         else if (place == Place.TOP)
-                            dominoChain.putToTheTop(domino);
+                            putToTheTop(domino);
                         break;
                     default:
                         throw new IllegalStateException("Unexpected value: " + place);
@@ -160,14 +159,14 @@ public final class Game {
             throw new NullPointerException("domino = null, expected Domino value");
         else{
             Place place = Place.UNDEFINED;
-            if (dominoChain.isTopEqualsBottom()) {
+            if (dominoChain.isEmpty() || isTopEqualsBottom()) {
                 place = Place.NO_MATTER;
             } else {
-                if ((dominoChain.isDominoMatchedTop(domino))
-                        && (!dominoChain.isDominoMatchedBottom(domino))) {
+                if ((isDominoMatchedTop(domino))
+                        && (!isDominoMatchedBottom(domino))) {
                     place = Place.TOP;
-                } else if ((dominoChain.isDominoMatchedBottom(domino))
-                        && (!dominoChain.isDominoMatchedTop(domino))) {
+                } else if ((isDominoMatchedBottom(domino))
+                        && (!isDominoMatchedTop(domino))) {
                     place = Place.BOTTOM;
                 }
             }
@@ -197,7 +196,7 @@ public final class Game {
             LinkedList<Domino> currentDominos = playerDominos.get(player);
             boolean isEveryDominoInvalid = true;
             for (Domino domino : currentDominos){
-                if (dominoChain.isDominoMatched(domino))
+                if (isDominoMatched(domino))
                 {
                     domino.setStatus(DominoStatus.VALID);
                     isEveryDominoInvalid = false;
@@ -219,7 +218,7 @@ public final class Game {
                 if (!dominoStore.isEmpty()){
                     dominoFromStore = dominoStore.pop();
                     playerDominos.get(player).add(dominoFromStore);
-                    if (dominoChain.isDominoMatched(dominoFromStore)){
+                    if (isDominoMatched(dominoFromStore)){
                         dominoFromStore.setStatus(DominoStatus.VALID);
                         isOk = true;
                     }
@@ -229,5 +228,100 @@ public final class Game {
             }
             return isOk;
         }
+    }
+
+    public void putToTheTop(Domino domino){
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else{
+            dominoChain.addFirst(domino);
+        }
+    }
+
+    public void putToTheBottom(Domino domino){
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else{
+            dominoChain.addLast(domino);
+        }
+    }
+
+    public void putFirstDomino(Domino domino){
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else{
+            dominoChain.addFirst(domino);
+        }
+    }
+
+
+    public Side whichSideMatched(Domino domino, Place place){
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else if (place == null)
+            throw new NullPointerException("place = null, expected Place value");
+        else{
+            Side side;
+            switch (place){
+                case TOP:
+                    if (domino.getHead() == dominoChain.getFirst().getHead())
+                        side = Side.HEAD;
+                    else
+                        side = Side.TAIL;
+                    break;
+                case BOTTOM:
+                    if (domino.getHead() == dominoChain.getLast().getTail())
+                        side = Side.HEAD;
+                    else
+                        side = Side.TAIL;
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + place);
+            }
+            return side;
+        }
+    }
+
+    public boolean isDominoMatched(Domino domino){
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else{
+            if (!dominoChain.isEmpty()){
+                boolean a = isDominoMatchedTop(domino);
+                boolean b = isDominoMatchedBottom(domino);
+                return a || b;
+            }
+            return false;
+        }
+    }
+
+    public boolean isDominoMatchedTop(Domino domino){
+        return isDominoMatchedPlace(domino, dominoChain.getFirst().getHead());
+    }
+
+    public boolean isDominoMatchedBottom(Domino domino){
+        return isDominoMatchedPlace(domino, dominoChain.getLast().getTail());
+    }
+
+    private boolean isDominoMatchedPlace(Domino domino, int place) {
+        if (domino == null)
+            throw new NullPointerException("domino = null, expected Domino value");
+        else{
+            if (!dominoChain.isEmpty()){
+                boolean a = domino.getHead() == place;
+                boolean b = domino.getTail() == place;
+                return a || b;
+            }
+            return false;
+        }
+    }
+
+    public boolean isTopEqualsBottom(){
+        return dominoChain.getFirst().getHead() == dominoChain.getLast().getTail();
+    }
+
+    @Override
+    public String toString() {
+        return dominoChain.toString();
     }
 }

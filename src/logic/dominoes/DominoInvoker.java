@@ -1,6 +1,5 @@
 package logic.dominoes;
 
-import logic.dominoes.DominoComand;
 
 public class DominoInvoker {
     private DominoComand dominoComand;

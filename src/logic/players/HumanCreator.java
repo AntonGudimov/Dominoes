@@ -1,8 +1,5 @@
 package logic.players;
 
-import logic.players.Human;
-import logic.players.Player;
-import logic.players.PlayerCreator;
 
 public class HumanCreator extends PlayerCreator {
 

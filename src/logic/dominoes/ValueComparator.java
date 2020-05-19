@@ -1,6 +1,5 @@
 package logic.dominoes;
 
-import logic.dominoes.Domino;
 import logic.players.Player;
 
 import java.util.Collections;
