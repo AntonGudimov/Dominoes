@@ -1,6 +1,5 @@
 package logic.dominoes;
 
-import logic.dominoes.Domino;
 import logic.enums.Place;
 import logic.players.Player;
 

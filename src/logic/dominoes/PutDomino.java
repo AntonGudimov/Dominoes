@@ -1,7 +1,6 @@
 package logic.dominoes;
 
 import logic.Game;
-import logic.dominoes.DominoComand;
 
 public class PutDomino extends DominoComand {
     private Game game;
