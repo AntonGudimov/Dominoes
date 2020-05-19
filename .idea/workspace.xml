@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/CommandHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/CommandHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoInvoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/ValueComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/ValueComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/players/ComputerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/players/ComputerCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/players/HumanCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/players/HumanCreator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +104,7 @@
       <workItem from="1589804894495" duration="3746000" />
       <workItem from="1589894823988" duration="957000" />
       <workItem from="1589888033283" duration="2189000" />
-      <workItem from="1589893483541" duration="1957000" />
+      <workItem from="1589893483541" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
       <created>1589894092988</created>
