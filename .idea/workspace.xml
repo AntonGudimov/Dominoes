@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="Delete DominoChain class">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoChain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoChain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/CommandHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/CommandHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/DominoChain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/DominoComand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/DominoComand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/DominoInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/DominoInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/PutDomino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/PutDomino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/ValueComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/ValueComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/players/ComputerCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/players/ComputerCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/players/HumanCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/players/HumanCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1XccDXSysdMTSkvFrheCjP3ORkO" />
   <component name="ProjectViewState">
@@ -121,12 +106,24 @@
       <workItem from="1589804894495" duration="3746000" />
       <workItem from="1589894823988" duration="957000" />
       <workItem from="1589888033283" duration="2189000" />
-      <workItem from="1589893483541" duration="505000" />
+      <workItem from="1589893483541" duration="767000" />
     </task>
+    <task id="LOCAL-00001" summary="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
+      <created>1589894092988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894092988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
   </component>
   <component name="WindowStateProjectService">
     <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1588525011426">
@@ -137,30 +134,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1588280723042" />
-    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2" timestamp="1589893706140">
+    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2" timestamp="1589894261997">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589893706140" />
+    <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1589894261997" />
     <state width="499" height="466" key="DebuggerActiveHint" timestamp="1588534352148">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="499" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1588534352148" />
-    <state width="1318" height="79" key="GridCell.Tab.0.bottom" timestamp="1589890221634">
+    <state width="1318" height="96" key="GridCell.Tab.0.bottom" timestamp="1589894173104">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="79" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589890221634" />
-    <state width="1318" height="79" key="GridCell.Tab.0.center" timestamp="1589890221633">
+    <state width="1318" height="96" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589894173104" />
+    <state width="1318" height="96" key="GridCell.Tab.0.center" timestamp="1589894173103">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="79" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589890221633" />
-    <state width="1318" height="79" key="GridCell.Tab.0.left" timestamp="1589890221633">
+    <state width="1318" height="96" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589894173103" />
+    <state width="1318" height="96" key="GridCell.Tab.0.left" timestamp="1589894173102">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="79" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589890221633" />
-    <state width="1318" height="79" key="GridCell.Tab.0.right" timestamp="1589890221634">
+    <state width="1318" height="96" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589894173102" />
+    <state width="1318" height="96" key="GridCell.Tab.0.right" timestamp="1589894173103">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="79" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589890221634" />
+    <state width="1318" height="96" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589894173103" />
     <state width="1318" height="277" key="GridCell.Tab.1.bottom" timestamp="1589890221629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -189,10 +186,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="368" y="264" width="625" height="226" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738@0.0.1366.738" timestamp="1588522094007" />
-    <state x="451" y="289" width="464" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589893537477">
+    <state x="451" y="289" width="464" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589894185714">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="451" y="289" width="464" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1589893537477" />
+    <state x="451" y="289" width="464" height="162" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1589894185714" />
     <state x="545" y="173" width="530" height="476" key="extract.method.dialog" timestamp="1588677510864">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
