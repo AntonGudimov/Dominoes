@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="">
+    <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/CommandHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/CommandHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoInvoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/ValueComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/ValueComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/players/ComputerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/players/ComputerCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/players/HumanCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/players/HumanCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +114,7 @@
       <workItem from="1589804894495" duration="3746000" />
       <workItem from="1589894823988" duration="957000" />
       <workItem from="1589888033283" duration="2189000" />
-      <workItem from="1589893483541" duration="767000" />
+      <workItem from="1589893483541" duration="1957000" />
     </task>
     <task id="LOCAL-00001" summary="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
       <created>1589894092988</created>
@@ -120,6 +128,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines." />
@@ -142,22 +161,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="499" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1588534352148" />
-    <state width="1318" height="96" key="GridCell.Tab.0.bottom" timestamp="1589894173104">
+    <state width="1318" height="302" key="GridCell.Tab.0.bottom" timestamp="1589895572940">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="96" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589894173104" />
-    <state width="1318" height="96" key="GridCell.Tab.0.center" timestamp="1589894173103">
+    <state width="1318" height="302" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589895572940" />
+    <state width="1318" height="302" key="GridCell.Tab.0.center" timestamp="1589895572938">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="96" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589894173103" />
-    <state width="1318" height="96" key="GridCell.Tab.0.left" timestamp="1589894173102">
+    <state width="1318" height="302" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589895572938" />
+    <state width="1318" height="302" key="GridCell.Tab.0.left" timestamp="1589895572937">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="96" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589894173102" />
-    <state width="1318" height="96" key="GridCell.Tab.0.right" timestamp="1589894173103">
+    <state width="1318" height="302" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589895572937" />
+    <state width="1318" height="302" key="GridCell.Tab.0.right" timestamp="1589895572939">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="96" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589894173103" />
+    <state width="1318" height="302" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589895572939" />
     <state width="1318" height="277" key="GridCell.Tab.1.bottom" timestamp="1589890221629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -202,16 +221,5 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1589884199553" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>125</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

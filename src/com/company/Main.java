@@ -57,7 +57,7 @@ public class Main {
                         String name = bufferedReader.readLine();
                         System.out.printf("Enter type of the %d player\nh - human\nc - computer\n", i + 1);
                         Player player;
-                        String type = "";
+                        String type;
                         do{
                             type = bufferedReader.readLine().toLowerCase();
                             if (type.equals("h"))
@@ -113,7 +113,6 @@ public class Main {
 
                 if (needToGo){
                     isThereAPossibilityOfFish = false;
-                    int id = 0;
                     Map.Entry<Domino, Place> dominoPlace;
                     if (currentPlayer.getClass() == Human.class)
                         dominoPlace = HumanChoosingDominoAndPlace(game, currentPlayer);
