@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="4435a857-ab8c-4dee-91dc-be5d06ef4322" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/DominoComand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dominoes/logic/dominoes/PutDomino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/DominoComand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/DominoComand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/dominoes/PutDomino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/dominoes/PutDomino.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +61,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -106,7 +116,13 @@
       <workItem from="1589804894495" duration="3746000" />
       <workItem from="1589894823988" duration="957000" />
       <workItem from="1589888033283" duration="2189000" />
-      <workItem from="1589893483541" duration="2717000" />
+      <workItem from="1589893483541" duration="3175000" />
+      <workItem from="1591180646428" duration="500000" />
+      <workItem from="1591182463664" duration="1446000" />
+      <workItem from="1591188369491" duration="108000" />
+      <workItem from="1591196672844" duration="637000" />
+      <workItem from="1591199439355" duration="27000" />
+      <workItem from="1591199671786" duration="3228000" />
     </task>
     <task id="LOCAL-00001" summary="Delete DominoChain class, move all functions and LinkedList&lt;Domino&gt; dominoChain to the Game class.&#10;Delete all useless lines.">
       <created>1589894092988</created>
@@ -133,7 +149,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -145,14 +163,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Delete another useless lines" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1588525011426">
+    <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1591201852363">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1588525011426" />
-    <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588280723042">
+    <state x="491" y="80" width="542" height="577" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1591201852363" />
+    <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591202275010">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1588280723042" />
+    <state x="416" y="118" width="530" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1591202275010" />
     <state x="253" y="0" width="856" height="736" key="CommitChangelistDialog2" timestamp="1589896438079">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -161,22 +179,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="499" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1588534352148" />
-    <state width="1318" height="302" key="GridCell.Tab.0.bottom" timestamp="1589895572940">
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl" timestamp="1591199464076">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="302" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589895572940" />
-    <state width="1318" height="302" key="GridCell.Tab.0.center" timestamp="1589895572938">
+    <state x="466" y="128" width="430" height="482" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1591199464076" />
+    <state width="1318" height="288" key="GridCell.Tab.0.bottom" timestamp="1591202817660">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="302" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589895572938" />
-    <state width="1318" height="302" key="GridCell.Tab.0.left" timestamp="1589895572937">
+    <state width="1318" height="288" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591202817660" />
+    <state width="1318" height="288" key="GridCell.Tab.0.center" timestamp="1591202817660">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="302" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589895572937" />
-    <state width="1318" height="302" key="GridCell.Tab.0.right" timestamp="1589895572939">
+    <state width="1318" height="288" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591202817660" />
+    <state width="1318" height="288" key="GridCell.Tab.0.left" timestamp="1591202817660">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1318" height="302" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589895572939" />
+    <state width="1318" height="288" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591202817660" />
+    <state width="1318" height="288" key="GridCell.Tab.0.right" timestamp="1591202817660">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1318" height="288" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591202817660" />
     <state width="1318" height="277" key="GridCell.Tab.1.bottom" timestamp="1589890221629">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -193,14 +215,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1318" height="277" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1589890221629" />
-    <state x="254" y="0" width="1030" height="736" key="SettingsEditor" timestamp="1589893545022">
+    <state x="254" y="0" width="1030" height="736" key="SettingsEditor" timestamp="1591202813491">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="254" y="0" width="1030" height="736" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1589893545022" />
-    <state x="376" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1589893484871">
+    <state x="254" y="0" width="1030" height="736" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1591202813491" />
+    <state x="376" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1591199441449">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="376" y="196" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1589893484871" />
+    <state x="376" y="196" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1591199441449" />
     <state x="368" y="264" width="625" height="226" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588522094007">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -213,6 +235,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="545" y="173" width="530" height="476" key="extract.method.dialog/0.0.1366.738@0.0.1366.738" timestamp="1588677510864" />
+    <state x="32" y="0" width="1298" height="736" key="new project wizard" timestamp="1591182783119">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="32" y="0" width="1298" height="736" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1591182783119" />
     <state x="344" y="162" key="run.anything.popup" timestamp="1588411991216">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

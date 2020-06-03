@@ -1,12 +1,22 @@
 package logic.dominoes;
 
 import logic.Game;
+import logic.enums.Place;
 
 public class PutDomino extends DominoComand {
-    private Game game;
+    private Domino domino;
+    private Place place;
 
     public PutDomino(Game game){
-        this.game = game;
+        super(game);
+    }
+
+    public void setDomino(Domino domino) {
+        this.domino = domino;
+    }
+
+    public void setPlace(Place place){
+        this.place = place;
     }
 
     @Override

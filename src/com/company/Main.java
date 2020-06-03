@@ -1,10 +1,7 @@
 package com.company;
 
 import logic.*;
-import logic.dominoes.Domino;
-import logic.dominoes.DominoComand;
-import logic.dominoes.DominoInvoker;
-import logic.dominoes.PutDomino;
+import logic.dominoes.*;
 import logic.enums.DominoStatus;
 import logic.enums.GameState;
 import logic.enums.Place;
@@ -94,8 +91,8 @@ public class Main {
         Game game = Game.getGame();
 
         DominoInvoker dominoInvoker = new DominoInvoker();
-        DominoComand dominoComand = new PutDomino(game);
-        dominoInvoker.setDominoCommand(dominoComand);
+        PutDomino putDominoCommand = new PutDomino(game);
+        dominoInvoker.setDominoCommand(putDominoCommand);
 
         int indexOfPlayerWhoGoesFirst = game.newGame(players);
 
@@ -119,9 +116,9 @@ public class Main {
                     else
                         dominoPlace = ComputerChoosingDominoAndPlace(game, currentPlayer);
 
-                    dominoComand.setDomino(dominoPlace.getKey());
-                    dominoComand.setPlace(dominoPlace.getValue());
-                    dominoComand.setPlayer(currentPlayer);
+                    putDominoCommand.setDomino(dominoPlace.getKey());
+                    putDominoCommand.setPlace(dominoPlace.getValue());
+                    putDominoCommand.setPlayer(currentPlayer);
                     dominoInvoker.executeCommand();
 
                     if (game.getGameState() == GameState.OVER){

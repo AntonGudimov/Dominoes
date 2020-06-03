@@ -1,19 +1,14 @@
 package logic.dominoes;
 
-import logic.enums.Place;
+import logic.Game;
 import logic.players.Player;
 
 public abstract class DominoComand{
-    protected Domino domino;
-    protected Place place;
+    protected Game game;
     protected Player player;
 
-    public void setDomino(Domino domino) {
-        this.domino = domino;
-    }
-
-    public void setPlace(Place place){
-        this.place = place;
+    public DominoComand(Game game){
+        this.game = game;
     }
 
     public void setPlayer(Player player) {

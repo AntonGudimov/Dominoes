@@ -106,7 +106,7 @@ public final class Game {
             throw new NullPointerException("player = null, expected Player value");
         else{
             if (isChainEmpty()){
-                putFirstDomino(domino);
+                putToTheTop(domino);
             }
             else{
                 if (place == Place.NO_MATTER){
@@ -208,7 +208,7 @@ public final class Game {
         }
     }
 
-    private boolean hitPlayer(Player player){
+    public boolean hitPlayer(Player player){
         if (player == null)
             throw new NullPointerException("player = null, expected Player value");
         else{
@@ -243,14 +243,6 @@ public final class Game {
             throw new NullPointerException("domino = null, expected Domino value");
         else{
             dominoChain.addLast(domino);
-        }
-    }
-
-    public void putFirstDomino(Domino domino){
-        if (domino == null)
-            throw new NullPointerException("domino = null, expected Domino value");
-        else{
-            dominoChain.addFirst(domino);
         }
     }
 
@@ -315,6 +307,7 @@ public final class Game {
             return false;
         }
     }
+
 
     public boolean isTopEqualsBottom(){
         return dominoChain.getFirst().getHead() == dominoChain.getLast().getTail();
