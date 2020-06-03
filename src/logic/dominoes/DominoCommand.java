@@ -3,11 +3,11 @@ package logic.dominoes;
 import logic.Game;
 import logic.players.Player;
 
-public abstract class DominoComand{
+public abstract class DominoCommand {
     protected Game game;
     protected Player player;
 
-    public DominoComand(Game game){
+    public DominoCommand(Game game){
         this.game = game;
     }
 

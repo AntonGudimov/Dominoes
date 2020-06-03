@@ -308,6 +308,9 @@ public final class Game {
         }
     }
 
+    public static void clear(){
+        game = null;
+    }
 
     public boolean isTopEqualsBottom(){
         return dominoChain.getFirst().getHead() == dominoChain.getLast().getTail();

@@ -3,17 +3,17 @@ package logic.dominoes;
 import java.util.Stack;
 
 public class CommandHistory {
-    private Stack<DominoComand> history;
+    private Stack<DominoCommand> history;
 
     public CommandHistory(){
         history = new Stack<>();
     }
 
-    public Stack<DominoComand> getHistory(){
+    public Stack<DominoCommand> getHistory(){
         return history;
     }
 
-    public void push(DominoComand command){
+    public void push(DominoCommand command){
         history.push(command);
     }
 
@@ -21,7 +21,7 @@ public class CommandHistory {
         return history.isEmpty();
     }
 
-    public DominoComand pop(){
+    public DominoCommand pop(){
         return history.pop();
     }
 }

@@ -3,7 +3,7 @@ package logic.dominoes;
 import logic.Game;
 import logic.enums.Place;
 
-public class PutDomino extends DominoComand {
+public class PutDomino extends DominoCommand {
     private Domino domino;
     private Place place;
 

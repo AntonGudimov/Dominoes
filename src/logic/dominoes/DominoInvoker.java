@@ -2,13 +2,13 @@ package logic.dominoes;
 
 
 public class DominoInvoker {
-    private DominoComand dominoComand;
+    private DominoCommand dominoCommand;
 
-    public void setDominoCommand(DominoComand dominoComand) {
-        this.dominoComand = dominoComand;
+    public void setDominoCommand(DominoCommand dominoCommand) {
+        this.dominoCommand = dominoCommand;
     }
 
     public void executeCommand(){
-        dominoComand.execute();
+        dominoCommand.execute();
     }
 }

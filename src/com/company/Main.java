@@ -25,7 +25,7 @@ public class Main {
                     case 0:
                         break;
                     case 1:
-                        playGame(getPlayers());
+                        playGame();
                     default:
                         System.out.println("Unknown option");
                 }
@@ -86,9 +86,9 @@ public class Main {
         return players;
     }
 
-    public static void playGame(LinkedList<Player> players){
-
+    public static void playGame(){
         Game game = Game.getGame();
+        LinkedList<Player> players = getPlayers();
 
         DominoInvoker dominoInvoker = new DominoInvoker();
         PutDomino putDominoCommand = new PutDomino(game);
@@ -148,6 +148,7 @@ public class Main {
             }
             itr = players.listIterator(0);
         }
+        Game.clear();
     }
 
     public static Map.Entry<Domino, Place> HumanChoosingDominoAndPlace(Game game, Player currentPlayer){
